@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Directorio Médico · Clínica Cruz Jiminián</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <img class="logo" src="assets/logo.png" alt="">
+      <div class="brand">
+        <span class="brand-name">Clínica Cruz Jiminián</span>
+        <span class="brand-tag">Directorio Médico</span>
+      </div>
+      <div class="header-clock" aria-hidden="true">
+        <span class="clock-time" id="clock-time">--:--</span>
+        <span class="clock-date" id="clock-date">&nbsp;</span>
+      </div>
+    </header>
+    <main id="main">
+      <section id="stage" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <div id="standby" class="standby" role="button" tabindex="0" aria-label="Pantalla de bienvenida. Toque la pantalla para iniciar el directorio médico">
+    <div class="helix-scene" aria-hidden="true">
+      <svg viewBox="0 0 260 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M45 0 C 45 90 215 90 215 180 C 215 270 45 270 45 360"
+          stroke="#3D9A28" stroke-width="11" stroke-linecap="round"/>
+        <path d="M215 0 C 215 90 45 90 45 180 C 45 270 215 270 215 360"
+          stroke="#C8CDEF" stroke-width="11" stroke-linecap="round"/>
+        <path d="M44 0 L216 0 M44.8 360 L215.2 360"
+          stroke="rgba(255,255,255,.55)" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="130" cy="90" r="7" fill="#3D9A28"/>
+        <circle cx="130" cy="180" r="7" fill="#C8CDEF"/>
+        <circle cx="130" cy="270" r="7" fill="#3D9A28"/>
+      </svg>
+    </div>
+    <div class="plusw" aria-hidden="true"><div class="plus"></div></div>
+    <svg class="worm-layer" aria-hidden="true"></svg>
+    <img class="standby-logo" src="assets/logo.png" alt="">
+    <h1 class="standby-brand">Clínica Cruz Jiminián</h1>
+    <p class="standby-tag">Directorio Médico</p>
+    <div class="standby-clock">
+      <div class="standby-time" id="standby-time">--:--</div>
+      <div class="standby-date" id="standby-date">&nbsp;</div>
+    </div>
+<span class="standby-status"><span class="dot"></span>Abierto 24 horas</span>
+    <div class="standby-hint">Toque la pantalla para iniciar</div>
+  </div>
+
+<script src="js/data.js?v=6"></script>
+<script src="js/fotos.js?v=6"></script>
+<script src="js/app.js?v=6"></script>
+</body>
+</html>
